@@ -35,17 +35,20 @@ const teamGroups: TeamGroup[] = [
     ],
   },
   {
-    title: "Encadrant Ingénieur",
+    title: "Encadrants Ingénieur",
     icon: Code,
-    members: [{ name: "Firas Hajlaoui", role: "", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jijjEkfipT5MSLrN3ye3KAUOy5NDwq.png" }],
+    members: [
+      { name: "Firas Hajlaoui", role: "", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jijjEkfipT5MSLrN3ye3KAUOy5NDwq.png" },
+      { name: "Hayfa Trabelsi", role: "", image: "/hayfa.png" },
+    ],
   },
   {
     title: "Étudiants",
     icon: Users,
     members: [
-      { 
-        name: "Ibtigha Jomaa", 
-        role: "Développeur IA", 
+      {
+        name: "Ibtigha Jomaa",
+        role: "Développeur IA",
         image: "/ibtigha.png",
         github: "https://github.com/ibtighaajomaa",
         linkedin: "https://www.linkedin.com/in/ibtighaa-jomaa-85b70239a/",
@@ -126,8 +129,8 @@ export function TeamSection() {
                     {member.image ? (
                       <div className="relative flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-full border-3 border-primary/20 bg-white p-1 shadow-lg">
                         <div className="h-full w-full overflow-hidden rounded-full bg-white">
-                          <img 
-                            src={member.image} 
+                          <img
+                            src={member.image}
                             alt={member.name}
                             className="h-full w-full object-cover"
                           />
