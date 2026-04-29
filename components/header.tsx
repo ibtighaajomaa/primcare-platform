@@ -7,7 +7,7 @@ import { Menu, X, ArrowRight } from "lucide-react"
 const navItems = [
   { label: "Problème", href: "#problem" },
   { label: "Solution", href: "#solution" },
-  { label: "Démo", href: "#demo" },
+  { label: "Vidéo", href: "#demo" },
   { label: "Équipe", href: "#team" },
 ]
 
@@ -19,9 +19,7 @@ export function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 lg:px-8">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary/80 text-primary-foreground font-bold shadow-sm transition-transform duration-300 group-hover:scale-105 group-hover:shadow-md">
-            P
-          </div>
+          <img src="/logo.png" alt="PrimCare Logo" className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
           <span className="text-xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent transition-all group-hover:text-primary">
             PrimCare
           </span>
@@ -42,10 +40,12 @@ export function Header() {
 
         {/* Desktop CTA */}
         <div className="hidden md:flex">
-          <Button className="rounded-full bg-primary text-primary-foreground shadow-md transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:-translate-y-0.5 gap-2 px-6">
-            Voir la démo
-            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </Button>
+          <a href="#demo">
+            <Button className="rounded-full bg-primary text-primary-foreground shadow-md transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:-translate-y-0.5 gap-2 px-6">
+              Voir la Vidéo
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -76,10 +76,12 @@ export function Header() {
               </a>
             ))}
             <div className="mt-4 px-4">
-              <Button className="w-full rounded-full gap-2 shadow-md">
-                Voir la démo
-                <ArrowRight className="h-4 w-4" />
-              </Button>
+              <a href="#demo" onClick={() => setMobileMenuOpen(false)}>
+                <Button className="w-full rounded-full gap-2 shadow-md">
+                  Voir la Vidéo
+                  <ArrowRight className="h-4 w-4" />
+                </Button>
+              </a>
             </div>
           </nav>
         </div>

@@ -35,21 +35,8 @@ export function HeroSection() {
             <strong className="text-foreground">le temps du soin</strong>.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button size="lg" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
-              Découvrir la solution
-              <ArrowRight className="h-4 w-4" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="gap-2 border-primary/30 text-foreground hover:bg-primary/5"
-            >
-              <Play className="h-4 w-4" />
-              Voir la démo
-            </Button>
-          </div>
+          
+      
 
           {/* Stats */}
           <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-3">

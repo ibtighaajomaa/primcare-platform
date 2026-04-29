@@ -12,9 +12,7 @@ export function FooterSection() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 text-xl font-bold">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                P
-              </div>
+              <img src="/logo.png" alt="PrimCare Logo" className="h-8 w-auto object-contain" />
               <span className="text-foreground">PrimCare</span>
             </div>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">

@@ -30,8 +30,8 @@ const teamGroups: TeamGroup[] = [
     title: "Encadrants Professionnels",
     icon: Stethoscope,
     members: [
-      { name: "Pr. Chiheb Romdhani", role: "" },
-      { name: "Dr. Kaouther Nehdi", role: "" },
+      { name: "Pr. Chiheb Romdhani", role: "", image: "/chiheb.png" },
+      { name: "Dr. Kaouther Nehdi", role: "", image: "/Kaouther.png" },
     ],
   },
   {
